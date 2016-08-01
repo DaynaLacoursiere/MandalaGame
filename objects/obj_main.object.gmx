@@ -28,7 +28,7 @@
             <string>if(((mouse_x - 5 &lt;= x) and (x &lt;= mouse_x + 5)) and ((mouse_y - 5 &lt;= y) and (y &lt;= mouse_y + 5))){
     speed = 0;
 } else {
-    move_towards_point(mouse_x,mouse_y,5);
+    move_towards_point(mouse_x,mouse_y,2);
 }
 </string>
           </argument>

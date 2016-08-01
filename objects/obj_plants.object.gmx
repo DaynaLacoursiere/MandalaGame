@@ -25,10 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed = 1;
+            <string>attached = false;
+attached_angle = 0;
+attached_distance = 0;
+
+speed = 1;
 direction = random(360)
 alarm[0] = random(90) + 30
-//motion_add(random(360),speed)
 </string>
           </argument>
         </arguments>
@@ -51,9 +54,45 @@ alarm[0] = random(90) + 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//motion_add(random(360),speed)
-direction = random(360)
+            <string>if (!attached) {
+    direction = random(360)
+}
 alarm[0] = random(120) + 30
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (attached){
+    if (obj_main.x - x &gt; 0){
+        x = obj_main.x - (cos(attached_angle) * attached_distance)
+    } else {
+        x = obj_main.x + (cos(attached_angle) * attached_distance)    
+    }
+    if (obj_main.y - y &gt; 0) {
+        y = obj_main.y - (sin(attached_angle) * attached_distance)
+    } else {
+        y = obj_main.y + (sin(attached_angle) * attached_distance)
+    }
+    show_debug_message("EXECUTED: "+string(x)+","+string(y))
+}
 </string>
           </argument>
         </arguments>
@@ -102,30 +141,21 @@ alarm[0] = random(120) + 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_debug_message("pressed on "+ string(id))
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>show_debug_message("clicked on "+ string(id))
+            <string>
+if (attached) {
+    attached = false
+    attached_angle = 0
+    attached_distance = 0
+    speed = 2
+    alarm[0] = random(120) + 30
+} else {
+    attached = true
+    attached_angle = point_direction(x,y,obj_main.x,obj_main.y)
+    attached_distance = distance_to_object(obj_main)
+    speed = 0
+    alarm[0] = -1
+}
+show_debug_message("pressed on "+ string(id) + " Angle: " + string(attached_angle) + " Distance: "+ string(attached_distance))
 </string>
           </argument>
         </arguments>

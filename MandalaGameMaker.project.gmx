@@ -8,8 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\spr_main</sprite>
     <sprite>sprites\spr_background</sprite>
-    <sprite>sprites\spr_long_walll</sprite>
-    <sprite>sprites\spr_short_wall</sprite>
     <sprites name="plants">
       <sprite>sprites\spr_leaf1</sprite>
       <sprite>sprites\spr_asparagus</sprite>
@@ -37,6 +35,7 @@
       <sprite>sprites\spr_snake_plant</sprite>
       <sprite>sprites\spr_succulent</sprite>
     </sprites>
+    <sprite>sprites\spr_wall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,11 +43,7 @@
     <object>objects\obj_main</object>
     <object>objects\obj_background</object>
     <objects name="walls">
-      <object>objects\obj_wall_left</object>
       <object>objects\obj_wall</object>
-      <object>objects\obj_wall_right</object>
-      <object>objects\obj_wall_top</object>
-      <object>objects\obj_wall_bottom</object>
     </objects>
     <objects name="plants">
       <object>objects\obj_plants</object>

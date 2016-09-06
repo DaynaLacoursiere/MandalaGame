@@ -58,6 +58,7 @@ alarm[0] = random(90) + 30
     direction = random(360)
 }
 alarm[0] = random(120) + 30
+
 </string>
           </argument>
         </arguments>
@@ -81,17 +82,8 @@ alarm[0] = random(120) + 30
           <argument>
             <kind>1</kind>
             <string>if (attached){
-    if (obj_main.x - x &gt; 0){
-        x = obj_main.x - (cos(attached_angle) * attached_distance)
-    } else {
-        x = obj_main.x + (cos(attached_angle) * attached_distance)    
-    }
-    if (obj_main.y - y &gt; 0) {
-        y = obj_main.y - (sin(attached_angle) * attached_distance)
-    } else {
-        y = obj_main.y + (sin(attached_angle) * attached_distance)
-    }
-    show_debug_message("EXECUTED: "+string(x)+","+string(y))
+    x = obj_main.x + attached_x_mod
+    y = obj_main.y + attached_y_mod
 }
 </string>
           </argument>
@@ -146,13 +138,18 @@ if (attached) {
     attached = false
     attached_angle = 0
     attached_distance = 0
+    // Call destroy clones
+    creator = false
     speed = 2
     alarm[0] = random(120) + 30
 } else {
-    attached = true
-    attached_angle = point_direction(x,y,obj_main.x,obj_main.y)
-    attached_distance = distance_to_object(obj_main)
-    speed = 0
+    // Call create clones
+
+    // attached = true
+    // attached_angle = start_angle
+    // attached_distance = distance_to_object(obj_main)
+    // creator = true
+    // speed = 0
     alarm[0] = -1
 }
 show_debug_message("pressed on "+ string(id) + " Angle: " + string(attached_angle) + " Distance: "+ string(attached_distance))

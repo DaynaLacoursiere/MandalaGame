@@ -7,7 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_main</sprite>
-    <sprite>sprites\spr_background</sprite>
     <sprites name="plants">
       <sprite>sprites\spr_leaf1</sprite>
       <sprite>sprites\spr_asparagus</sprite>
@@ -37,11 +36,15 @@
     </sprites>
     <sprite>sprites\spr_wall</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bkg_sand</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\CreatePlantClones.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_main</object>
-    <object>objects\obj_background</object>
     <objects name="walls">
       <object>objects\obj_wall</object>
     </objects>

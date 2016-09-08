@@ -26,12 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>attached = false;
-attached_angle = 0;
-attached_distance = 0;
+attached_x_mod = 0;
+attached_y_mod = 0;
 
 speed = 1;
-direction = random(360)
-alarm[0] = random(90) + 30
+direction = random(360);
+alarm[0] = random(90) + 30;
 </string>
           </argument>
         </arguments>
@@ -54,11 +54,14 @@ alarm[0] = random(90) + 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!attached) {
+            <string>if (is_undefined(attached)) {
+    attached = false
+}
+
+if (!attached) {
     direction = random(360)
 }
 alarm[0] = random(120) + 30
-
 </string>
           </argument>
         </arguments>
@@ -81,7 +84,10 @@ alarm[0] = random(120) + 30
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (attached){
+            <string>if (is_undefined(attached)) {
+    attached = false
+}
+if (attached){
     x = obj_main.x + attached_x_mod
     y = obj_main.y + attached_y_mod
 }
@@ -144,7 +150,8 @@ if (attached) {
     alarm[0] = random(120) + 30
 } else {
     // Call create clones
-
+    show_debug_message("Printing: "+string(distance_to_object(obj_main)) + " " + string(object_index))
+    CreatePlantClones(distance_to_object(obj_main), object_index)
     // attached = true
     // attached_angle = start_angle
     // attached_distance = distance_to_object(obj_main)

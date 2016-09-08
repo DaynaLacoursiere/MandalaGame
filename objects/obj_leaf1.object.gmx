@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>multiplier = 4
+            <string>event_inherited()
+multiplier = 4
 start_angle = 45
 angle = 90
 creator = false

@@ -28,35 +28,22 @@
             <string>if(((mouse_x - 5 &lt;= x) and (x &lt;= mouse_x + 5)) and ((mouse_y - 5 &lt;= y) and (y &lt;= mouse_y + 5))){
     speed = 0;
 } else {
-    move_towards_point(mouse_x,mouse_y,2);
+    move_x = mouse_x
+    move_y = mouse_y
+    if (((x &gt; 1628) or (x &lt; 420)) and ((mouse_x &gt; 1628) or (mouse_x &lt; 420))) {
+        move_x = x
+    }
+    if (((y &gt; 1628) or (y &lt; 420)) and ((mouse_y &gt; 1628) or (mouse_y &lt; 420))){
+        move_y = y
+    }
+    if (!((move_x == x) and (move_y == y))){
+        move_towards_point(move_x,move_y,2);//2        
+    } else {
+        speed = 0
+    }
+
 }
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_wall">
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000010000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>

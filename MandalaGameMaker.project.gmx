@@ -42,6 +42,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\CreatePlantClones.gml</script>
+    <script>scripts\DestroyPlantClones.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_main</object>

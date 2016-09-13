@@ -99,6 +99,26 @@ if (attached){
     <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
+        <id>408</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>-1</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>attached</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>115</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -139,27 +159,20 @@ if (attached){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if (attached) {
+            <string>if (attached) {
     attached = false
     attached_angle = 0
     attached_distance = 0
     // Call destroy clones
-    creator = false
+    DestroyPlantClones(object_index)
     speed = 2
     alarm[0] = random(120) + 30
 } else {
     // Call create clones
-    show_debug_message("Printing: "+string(distance_to_object(obj_main)) + " " + string(object_index))
     CreatePlantClones(distance_to_object(obj_main), object_index)
-    // attached = true
-    // attached_angle = start_angle
-    // attached_distance = distance_to_object(obj_main)
-    // creator = true
-    // speed = 0
     alarm[0] = -1
 }
-show_debug_message("pressed on "+ string(id) + " Angle: " + string(attached_angle) + " Distance: "+ string(attached_distance))
+
 </string>
           </argument>
         </arguments>

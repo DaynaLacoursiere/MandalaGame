@@ -8,7 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\spr_main</sprite>
     <sprites name="plants">
-      <sprite>sprites\spr_leaf1</sprite>
       <sprite>sprites\spr_asparagus</sprite>
       <sprite>sprites\spr_avocado</sprite>
       <sprite>sprites\spr_barrel_cactus</sprite>
@@ -20,8 +19,6 @@
       <sprite>sprites\spr_dahlia</sprite>
       <sprite>sprites\spr_dragon_fruit</sprite>
       <sprite>sprites\spr_eggplant</sprite>
-      <sprite>sprites\spr_leaf2</sprite>
-      <sprite>sprites\spr_leaf3</sprite>
       <sprite>sprites\spr_leaf4</sprite>
       <sprite>sprites\spr_leaf5</sprite>
       <sprite>sprites\spr_leaf6</sprite>
@@ -33,6 +30,9 @@
       <sprite>sprites\spr_prickly_pear</sprite>
       <sprite>sprites\spr_snake_plant</sprite>
       <sprite>sprites\spr_succulent</sprite>
+      <sprite>sprites\spr_leaf1</sprite>
+      <sprite>sprites\spr_leaf2</sprite>
+      <sprite>sprites\spr_leaf3</sprite>
     </sprites>
     <sprite>sprites\spr_wall</sprite>
   </sprites>

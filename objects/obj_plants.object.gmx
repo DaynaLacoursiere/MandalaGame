@@ -90,6 +90,9 @@ alarm[0] = random(120) + 30
 if (attached){
     x = obj_main.x + attached_x_mod
     y = obj_main.y + attached_y_mod
+} else
+{
+    self.image_angle += 1;
 }
 </string>
           </argument>

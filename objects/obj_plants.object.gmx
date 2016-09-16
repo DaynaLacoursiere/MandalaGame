@@ -197,7 +197,8 @@ if (attached){
             <kind>1</kind>
             <string>if (!attached) {
     // Call create clones
-    CreatePlantClones(distance_to_object(obj_main), object_index)
+    distance_to_main = DistanceToMain(obj_main.x, obj_main.y)
+    CreatePlantClones(distance_to_main, object_index)
     alarm[0] = -1
     alarm[1] = random_range(30*30,45*30) //room speed is 30steps/second
 }

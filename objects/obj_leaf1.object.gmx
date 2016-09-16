@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>event_inherited()
+prolif_angle = 45
 multiplier = 4
 start_angle = 45
 angle = 90

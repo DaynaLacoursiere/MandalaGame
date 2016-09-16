@@ -6,7 +6,6 @@ creator = true
 currAngle = degtorad(self.image_angle)
 plantType = object_get_name(orig_ind)
 
-
 for (i = 0; i < multiplier; i += 1) {
     x_mod = (sin(currAngle) * dist_to_main)
     y_mod = (cos(currAngle) * dist_to_main)

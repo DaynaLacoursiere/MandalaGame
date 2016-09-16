@@ -31,8 +31,16 @@
       <sprite>sprites\spr_snake_plant</sprite>
       <sprite>sprites\spr_succulent</sprite>
       <sprite>sprites\spr_leaf1</sprite>
-      <sprite>sprites\spr_leaf2</sprite>
+      <sprite>sprites\spr_bourgainvillea</sprite>
+      <sprite>sprites\spr_daffodil</sprite>
+      <sprite>sprites\spr_fig_leaf</sprite>
+      <sprite>sprites\spr_forget_me_not</sprite>
       <sprite>sprites\spr_leaf3</sprite>
+      <sprite>sprites\spr_leaf2</sprite>
+      <sprite>sprites\spr_lily</sprite>
+      <sprite>sprites\spr_orchid</sprite>
+      <sprite>sprites\spr_pansy</sprite>
+      <sprite>sprites\spr_plumeria</sprite>
     </sprites>
     <sprite>sprites\spr_wall</sprite>
   </sprites>
@@ -76,6 +84,14 @@
       <object>objects\obj_prickly_pear</object>
       <object>objects\obj_snake_plant</object>
       <object>objects\obj_succulent</object>
+      <object>objects\obj_bourgainvillea</object>
+      <object>objects\obj_daffodil</object>
+      <object>objects\obj_fig_leaf</object>
+      <object>objects\obj_forget_me_not</object>
+      <object>objects\obj_lily</object>
+      <object>objects\obj_orchid</object>
+      <object>objects\obj_pansy</object>
+      <object>objects\obj_plumeria</object>
     </objects>
   </objects>
   <rooms name="rooms">

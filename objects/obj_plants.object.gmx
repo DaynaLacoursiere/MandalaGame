@@ -28,6 +28,7 @@
             <string>attached = false;
 attached_x_mod = 0;
 attached_y_mod = 0;
+first_plant_angle = 0;
 
 speed = 1;
 direction = random(360);
@@ -198,7 +199,7 @@ if (attached){
             <string>if (!attached) {
     // Call create clones
     distance_to_main = DistanceToMain(obj_main.x, obj_main.y)
-    CreatePlantClones(distance_to_main, object_index)
+    CreatePlantClones(distance_to_main, object_index, obj_main.x, obj_main.y)
     alarm[0] = -1
     alarm[1] = random_range(30*30,45*30) //room speed is 30steps/second
 }

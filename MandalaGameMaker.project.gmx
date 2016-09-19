@@ -14,6 +14,7 @@
       <sprite>sprites\spr_beets</sprite>
       <sprite>sprites\spr_bud</sprite>
       <sprite>sprites\spr_cactus</sprite>
+      <sprite>sprites\spr_cactus_fade</sprite>
       <sprite>sprites\spr_carrot</sprite>
       <sprite>sprites\spr_cucumber</sprite>
       <sprite>sprites\spr_dahlia</sprite>
@@ -93,6 +94,7 @@
       <object>objects\obj_orchid</object>
       <object>objects\obj_pansy</object>
       <object>objects\obj_plumeria</object>
+      <object>objects\obj_delete_plant</object>
     </objects>
   </objects>
   <rooms name="rooms">

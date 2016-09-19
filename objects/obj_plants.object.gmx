@@ -29,6 +29,7 @@
 attached_x_mod = 0;
 attached_y_mod = 0;
 first_plant_angle = 0;
+current_depth = -1;
 
 speed = 1;
 direction = random(360);

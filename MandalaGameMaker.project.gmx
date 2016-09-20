@@ -9,39 +9,71 @@
     <sprite>sprites\spr_main</sprite>
     <sprites name="plants">
       <sprite>sprites\spr_asparagus</sprite>
+      <sprite>sprites\spr_asparagus_fade</sprite>
       <sprite>sprites\spr_avocado</sprite>
+      <sprite>sprites\spr_avocado_fade</sprite>
       <sprite>sprites\spr_barrel_cactus</sprite>
+      <sprite>sprites\spr_barrel_cactus_fade</sprite>
       <sprite>sprites\spr_beets</sprite>
+      <sprite>sprites\spr_beets_fade</sprite>
       <sprite>sprites\spr_bud</sprite>
+      <sprite>sprites\spr_bud_fade</sprite>
       <sprite>sprites\spr_cactus</sprite>
       <sprite>sprites\spr_cactus_fade</sprite>
       <sprite>sprites\spr_carrot</sprite>
+      <sprite>sprites\spr_carrot_fade</sprite>
       <sprite>sprites\spr_cucumber</sprite>
+      <sprite>sprites\spr_cucumber_fade</sprite>
       <sprite>sprites\spr_dahlia</sprite>
+      <sprite>sprites\spr_dahlia_fade</sprite>
       <sprite>sprites\spr_dragon_fruit</sprite>
+      <sprite>sprites\spr_dragon_fruit_fade</sprite>
       <sprite>sprites\spr_eggplant</sprite>
+      <sprite>sprites\spr_eggplant_fade</sprite>
       <sprite>sprites\spr_leaf4</sprite>
+      <sprite>sprites\spr_leaf4_fade</sprite>
       <sprite>sprites\spr_leaf5</sprite>
+      <sprite>sprites\spr_leaf5_fade</sprite>
       <sprite>sprites\spr_leaf6</sprite>
+      <sprite>sprites\spr_leaf6_fade</sprite>
       <sprite>sprites\spr_lemon</sprite>
+      <sprite>sprites\spr_lemon_fade</sprite>
       <sprite>sprites\spr_lime</sprite>
+      <sprite>sprites\spr_lime_fade</sprite>
       <sprite>sprites\spr_mango</sprite>
+      <sprite>sprites\spr_mango_fade</sprite>
       <sprite>sprites\spr_monstera</sprite>
+      <sprite>sprites\spr_monstera_fade</sprite>
       <sprite>sprites\spr_pineapple</sprite>
+      <sprite>sprites\spr_pineapple_fade</sprite>
       <sprite>sprites\spr_prickly_pear</sprite>
+      <sprite>sprites\spr_prickly_pear_fade</sprite>
       <sprite>sprites\spr_snake_plant</sprite>
+      <sprite>sprites\spr_snake_plant_fade</sprite>
       <sprite>sprites\spr_succulent</sprite>
+      <sprite>sprites\spr_succulent_fade</sprite>
       <sprite>sprites\spr_leaf1</sprite>
+      <sprite>sprites\spr_leaf1_fade</sprite>
       <sprite>sprites\spr_bourgainvillea</sprite>
+      <sprite>sprites\spr_borgainvillea_fade</sprite>
       <sprite>sprites\spr_daffodil</sprite>
+      <sprite>sprites\spr_daffodil_fade</sprite>
       <sprite>sprites\spr_fig_leaf</sprite>
+      <sprite>sprites\spr_fig_leaf_fade</sprite>
       <sprite>sprites\spr_forget_me_not</sprite>
+      <sprite>sprites\spr_forget_me_not_fade</sprite>
       <sprite>sprites\spr_leaf3</sprite>
+      <sprite>sprites\spr_leaf3_fade</sprite>
       <sprite>sprites\spr_leaf2</sprite>
+      <sprite>sprites\spr_leaf2_fade</sprite>
       <sprite>sprites\spr_lily</sprite>
+      <sprite>sprites\spr_lily_fade</sprite>
       <sprite>sprites\spr_orchid</sprite>
+      <sprite>sprites\spr_orchid_fade</sprite>
       <sprite>sprites\spr_pansy</sprite>
+      <sprite>sprites\spr_pansy_fade</sprite>
       <sprite>sprites\spr_plumeria</sprite>
+      <sprite>sprites\spr_plumeria_fade</sprite>
     </sprites>
     <sprite>sprites\spr_wall</sprite>
   </sprites>

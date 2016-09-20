@@ -30,6 +30,7 @@ prolif_angle = 18
 multiplier = 4
 start_angle = 45
 angle = 90
+fade_animation = spr_avocado_fade
 </string>
           </argument>
         </arguments>

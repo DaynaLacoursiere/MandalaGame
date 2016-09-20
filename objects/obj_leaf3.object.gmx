@@ -31,6 +31,7 @@ prolif_angle = 36
 multiplier = 4
 start_angle = 0
 angle = 90
+fade_animation = spr_leaf3_fade
 </string>
           </argument>
         </arguments>

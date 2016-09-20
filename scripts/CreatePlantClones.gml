@@ -30,7 +30,6 @@ for (i = 0; i < multiplier; i += 1) {
     }
     currAngle += prolif_angle
     currDepth -= 1
-    show_debug_message("Current depth: "+string(currDepth))
 }
 plantObj.current_depth = currDepth
 

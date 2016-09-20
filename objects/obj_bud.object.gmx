@@ -30,6 +30,7 @@ prolif_angle = 18
 multiplier = 7
 start_angle = 0
 angle = 50
+fade_animation = spr_bud_fade
 </string>
           </argument>
         </arguments>

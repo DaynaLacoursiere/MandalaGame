@@ -77,6 +77,14 @@
     <instance objName="obj_prickly_pear" x="1568" y="192" name="inst_E8123854" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_snake_plant" x="1024" y="1536" name="inst_1C264494" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_succulent" x="640" y="768" name="inst_AE631F75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bourgainvillea" x="352" y="1888" name="inst_1572E218" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_daffodil" x="448" y="960" name="inst_8290B392" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fig_leaf" x="1312" y="1536" name="inst_9AD5A3E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_forget_me_not" x="352" y="128" name="inst_EBF0E9DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lily" x="1824" y="1312" name="inst_E2C5C8F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orchid" x="704" y="1408" name="inst_200B5439" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pansy" x="1568" y="1824" name="inst_553C9589" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plumeria" x="128" y="448" name="inst_BC84C3EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1024" y="0" name="inst_B4A31AE3" locked="0" code="" scaleX="65" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="1024" y="2048" name="inst_69622F16" locked="0" code="" scaleX="65" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="2048" y="1024" name="inst_60630374" locked="0" code="" scaleX="1" scaleY="65" colour="4294967295" rotation="0"/>

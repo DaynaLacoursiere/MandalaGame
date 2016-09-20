@@ -4,6 +4,8 @@ main_y = argument1
 
 x_distance = abs(main_x - self.x)
 y_distance = abs(main_y - self.y)
-return sqrt((x_distance*x_distance) + (y_distance*y_distance))
+total_distance = max(sqrt((x_distance*x_distance) + (y_distance*y_distance)), 100) //set 100 to be the minimum distance
+
+return total_distance
 
 

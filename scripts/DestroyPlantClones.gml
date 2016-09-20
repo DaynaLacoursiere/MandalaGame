@@ -12,6 +12,7 @@ while(true){
         image_angle = 0
     } else {
         with inst_id instance_destroy()
+        with inst_id depth = -1
     }
 }
 

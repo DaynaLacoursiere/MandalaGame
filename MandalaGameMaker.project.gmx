@@ -85,6 +85,7 @@
     <script>scripts\CreatePlantClones.gml</script>
     <script>scripts\DestroyPlantClones.gml</script>
     <script>scripts\DistanceToMain.gml</script>
+    <script>scripts\CreatePlant.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_main</object>

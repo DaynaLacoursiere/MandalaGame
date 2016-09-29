@@ -22,6 +22,6 @@ if (i == 0) {
     inst.attached = true
     inst.depth = currDepth
 }
-currAngle += prolif_angle
+currAngle -= prolif_angle
 currDepth -= 1
 current_depth = currDepth

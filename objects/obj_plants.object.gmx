@@ -33,6 +33,7 @@ current_depth = -1;
 create = false;
 plant_number = 0;
 currAngle = 0;
+rotating = false
 
 speed = 1;
 direction = random(360);
@@ -193,6 +194,10 @@ if (attached){
 {
     self.image_angle += 1;
 }
+if (rotating){
+     RotateTowardsMouse(object_index)
+}
+    
 </string>
           </argument>
         </arguments>
@@ -250,7 +255,14 @@ if (attached){
     alarm[0] = -1
     alarm[2] = 1
     alarm[1] = random_range(30*30,45*30) //room speed is 30steps/second
-}
+} else if (rotating &amp;&amp; attached){
+    rotating = false
+} else if (!rotating &amp;&amp; attached){
+    rotating = true 
+    //RotateTowardsMouse(object_index)
+} 
+
+
 
 </string>
           </argument>

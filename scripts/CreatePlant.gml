@@ -2,11 +2,11 @@ distance_to_main = argument0
 angle_to_plant = argument1
 i = argument2
 
+current_depth = global.score
 if (i == 0){
     currAngle = angle_to_plant - 270
 }
-currDepth = current_depth
-    
+currDepth = current_depth   
 
 x_mod = (sin(degtorad(currAngle)) * distance_to_main)
 y_mod = (cos(degtorad(currAngle)) * distance_to_main)
@@ -23,5 +23,5 @@ if (i == 0) {
     inst.depth = currDepth
 }
 currAngle -= prolif_angle
-currDepth -= 1
-current_depth = currDepth
+current_depth -= 1
+global.score = current_depth

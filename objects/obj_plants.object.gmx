@@ -126,6 +126,7 @@ if (attached) {
     attached = false
     attached_angle = 0
     attached_distance = 0
+    rotating = false
     // Call destroy clones
     DestroyPlantClones(object_index)
     speed = 2
@@ -257,10 +258,14 @@ if (rotating){
     alarm[1] = random_range(30*30,45*30) //room speed is 30steps/second
 } else if (rotating &amp;&amp; attached){
     rotating = false
+    TurnOnRotation(object_index, false)
 } else if (!rotating &amp;&amp; attached){
     rotating = true 
+    TurnOnRotation(object_index, true)
     //RotateTowardsMouse(object_index)
-} 
+} else {
+    rotating = false
+}
 
 
 

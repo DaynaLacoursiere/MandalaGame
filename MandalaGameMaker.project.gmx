@@ -89,6 +89,7 @@
     <script>scripts\DistanceToMain.gml</script>
     <script>scripts\CreatePlant.gml</script>
     <script>scripts\RotateTowardsMouse.gml</script>
+    <script>scripts\TurnOnRotation.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_main</object>

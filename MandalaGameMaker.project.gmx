@@ -78,6 +78,7 @@
       <sprite>sprites\spr_plumeria_fade</sprite>
     </sprites>
     <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_main_ping</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bkg_sand</background>

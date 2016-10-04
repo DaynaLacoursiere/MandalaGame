@@ -127,6 +127,7 @@ if (attached) {
     attached_angle = 0
     attached_distance = 0
     rotating = false
+    num_of_attached_plants -= 1
     // Call destroy clones
     DestroyPlantClones(object_index)
     speed = 2
@@ -253,6 +254,7 @@ if (rotating){
     distance_to_main = DistanceToMain(obj_main.x, obj_main.y)
     create = true
     plant_number = 0
+    num_of_attached_plants += 1
     alarm[0] = -1
     alarm[2] = 1
     alarm[1] = random_range(30*30,45*30) //room speed is 30steps/second

@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>depth = -100000
 global.score = 1000
+globalvar num_of_attached_plants ;
+num_of_attached_plants = 0;
 </string>
           </argument>
         </arguments>
@@ -65,7 +67,11 @@ global.score = 1000
     } else {
         speed = 0
     }
-
+}
+if (num_of_attached_plants == 0){
+    sprite_index = spr_main_ping
+} else {
+    sprite_index = spr_main
 }
 </string>
           </argument>
